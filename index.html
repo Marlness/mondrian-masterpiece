@@ -8,6 +8,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -15,57 +16,55 @@
       padding: 0;
       background-color: #fff;
     }
-    .container{
-      height: 90vw;
-      width:90vw;
+
+    .container {
       display: grid;
+      gap: 0.55vw;
+      background-color: #000;
+      width: 90vw;
+      height: 90vw;
       max-width: 748px;
       max-height: 748px;
-      gap:0.55vw;
-      background-color: #000 ;
       grid-template-rows: 4fr 1.5fr 2fr 0.3fr;
       grid-template-columns: 4fr 2.5fr 2fr 0.7fr;
     }
-    .first{
-      background-color:#E72F24 ;
-      grid-area: 1/1/2/2;
-    }
-    .second{
-      background-color:#F0F1EC;
-      grid-area:1/2/2/5;
-    }
-    .third{
-      background-color: #F0F1EC;
-      grid-area:2/1/4/2;
-    }
-    .fourth{
-      background-color:#F0F1EC ;
-      grid-area:2/2/4/4;
-    }
-    .fifth{
-      background-color: #004592;
-      grid-area:2/4/3/5;
-      border-bottom: 0.5vw solid #000;
-    }
-    .sixth{
-      background-color: #F0F1EC;
-      grid-area:3/4/5/5;
-    }
-    .seventh{
-      background-color: #F0F1EC;
-    }
-    .eighth{
-      background-color: #F9D01E;
-    }
-    .ninth{
-      background-color: #232629;
-    }
+
+    .first { background-color: #E72F24; grid-area: 1 / 1 / 2 / 2; }
+    .second { background-color: #F0F1EC; grid-area: 1 / 2 / 2 / 5; }
+    .third { background-color: #F0F1EC; grid-area: 2 / 1 / 4 / 2; }
+    .fourth { background-color: #F0F1EC; grid-area: 2 / 2 / 4 / 4; }
+    .fifth { background-color: #004592; grid-area: 2 / 4 / 3 / 5; border-bottom: 0.5vw solid #000; }
+    .sixth { background-color: #F0F1EC; grid-area: 3 / 4 / 5 / 5; }
+    .seventh { background-color: #F0F1EC; }
+    .eighth { background-color: #F9D01E; }
+    .ninth { background-color: #232629; }
+    
     @media (max-width: 600px) {
       .container {
         width: 95vw;
         height: 95vw;
         gap: 1.5vw;
       }
+    }
+
+    .text-container {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #U {
+      font-size: 2rem;
+      color: black;
+      font-family: "Libre Baskerville", serif;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    #l {
+      font-size: 2rem;
+      color: black;
+      font-family: "Libre Baskerville", serif;
+      margin: 0;
     }
   </style>
 </head>
@@ -81,6 +80,10 @@
     <div class="seventh"></div>
     <div class="eighth"></div>
     <div class="ninth"></div> 
+  </div>
+  <div class="text-container">
+    <h1 id="U">Piet Mondrian Masterpiece</h1>
+    <p id="l">Using CSS Grid!</p>
   </div>
 </body>
 
